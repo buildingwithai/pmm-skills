@@ -1,648 +1,422 @@
 ---
 name: personas-user-research
-description: Master the complete art and science of creating, validating, and activating buyer and user personas for product marketing. Learn research methodologies (qualitative/quantitative), interview techniques (Adele Revella's 5 Rings), persona frameworks (JTBD, ICP vs Persona), validation methods, and activation strategies. Covers Alan Cooper's methodology, proto-personas, behavioral/psychographic segmentation, inclusive personas, AI-powered personas, empathy mapping, workshop facilitation, organization-wide rollout, ROI measurement, B2B buying committees, persona lifecycle management, and avoiding common mistakes. Includes comprehensive tools, templates (HubSpot, Xtensio, Miro), interview question banks, and step-by-step processes for becoming world-class at persona development.
+description: Create, validate, and activate buyer and user personas for product marketing. Covers customer interview techniques (Adele Revella's 5 Rings method), step-by-step persona creation, B2B 3-persona model, validation methods, campaign activation, and organization rollout. Includes tools (HubSpot, Xtensio, AI-powered), workshop facilitation, buying committee mapping, and common mistakes to avoid. Use when creating personas from scratch, validating existing personas, activating personas in campaigns, or measuring persona ROI.
 ---
 
 # Personas & User Research Skill
 
-Become world-class at creating, validating, and activating buyer and user personas that drive product marketing effectiveness, align organizations, and deliver measurable business results.
-
-**✨ COMPREHENSIVE**: This skill covers the complete persona lifecycle from foundations to advanced AI-powered techniques, based on extensive research from Product Marketing Alliance, Buyer Persona Institute, Nielsen Norman Group, and leading practitioners.
+Create buyer and user personas that drive product marketing effectiveness, align organizations, and deliver measurable results.
 
 ## When to Use This Skill
 
-Use this skill when you need to:
+- **Create personas from scratch** using customer interviews and research
+- **Validate existing personas** with data and testing
+- **Interview customers** to uncover buying insights (5 Rings method)
+- **Activate personas** in marketing campaigns and sales enablement
+- **Run persona workshops** with stakeholders
+- **Map B2B buying committees** (6-20 people per deal)
+- **Choose persona tools** (HubSpot, Xtensio, AI-powered options)
+- **Measure persona effectiveness** and ROI
+- **Avoid common mistakes** that kill persona adoption
 
-- **Create buyer or user personas** from scratch for product marketing
-- **Conduct persona research** using qualitative and quantitative methods
-- **Interview customers** to uncover buying insights and motivations
-- **Validate existing personas** with data-driven methods
-- **Activate personas** across marketing, sales, and product teams
-- **Run persona workshops** with stakeholders for alignment
-- **Segment audiences** using behavioral and psychographic data
-- **Measure persona effectiveness** and demonstrate ROI
-- **Update and maintain personas** throughout their lifecycle
-- **Avoid common mistakes** that lead to ineffective personas
-- **Create inclusive personas** that avoid bias and represent diversity
-- **Implement AI-powered personas** for dynamic, data-driven profiles
-- **Map B2B buying committees** and create consensus personas
-- **Differentiate between** ICPs, buyer personas, user personas, and proto-personas
+## Quick Start Paths
 
-## The Complete Persona Lifecycle
+**Path 1: Creating Personas from Scratch (6-10 weeks)**
+1. Research & Interviews (2-3 weeks) → `core/01-research-interviews.md`
+2. Create Personas (1 week) → `core/02-creating-personas.md`
+3. Validate (1-2 weeks) → `core/03-validation-testing.md`
+4. Activate (ongoing) → `core/04-activation-campaigns.md`
 
-This skill covers the full journey from research to activation:
+**Path 2: Fast Start with Proto-Personas (2-4 hours)**
+1. Run stakeholder workshop → `advanced/01-workshop-facilitation.md`
+2. Create assumption-based personas → `core/02-creating-personas.md`
+3. Validate later with customer interviews → `core/01-research-interviews.md`
+
+**Path 3: Validating Existing Personas (1-2 weeks)**
+→ Jump to `core/03-validation-testing.md`
+
+**Path 4: Activating Unused Personas (2-3 weeks)**
+→ Jump to `core/04-activation-campaigns.md`
+
+## The Complete Process
 
 ```
-RESEARCH → CREATE → VALIDATE → ACTIVATE → DISTRIBUTE → MEASURE → EVOLVE
-(2-4 weeks) (1-2 weeks) (1-2 weeks) (1-2 weeks) (1 week) (ongoing) (quarterly)
+RESEARCH → CREATE → VALIDATE → ACTIVATE → MEASURE
+(2-4 weeks) (1 week) (1-2 weeks) (1-2 weeks) (ongoing)
 ```
 
-**Total timeline: 6-10 weeks** for complete process (faster for proto-personas, longer for data-driven statistical personas)
+**Total: 6-10 weeks** for comprehensive process
+**Fast track: 2-4 hours** for proto-personas (validate later)
 
-## How to Navigate This Skill
+## Core Guides (Start Here)
 
-This skill uses **progressive disclosure** - load only the content you need based on your specific challenge.
+### 1. Research & Interviews
+**File:** `core/01-research-interviews.md`
 
-### Core Foundations (Start Here)
+Learn HOW to conduct customer interviews using Adele Revella's proven 5 Rings method:
+- **5 Rings framework:** Priority Initiative, Success Factors, Perceived Barriers, Decision Criteria, Buyer's Journey
+- **Interview question bank:** 40+ questions for different scenarios
+- **Who to interview:** Successful customers, churned customers, closed-lost leads
+- **How many interviews:** 5-30 depending on market homogeneity
+- **Research methods:** Qualitative vs quantitative vs mixed methods
+- **Sample sizes and timing:** When to use which approach
 
-For the essential knowledge every persona practitioner needs:
+**Timeline:** 2-4 weeks for 10-15 interviews
 
-1. **`references/core/01-foundations-history.md`**
-   - Alan Cooper and the origin of personas (1983-1999)
-   - Types of personas (lightweight, qualitative, statistical)
-   - Proto-personas vs data-driven personas
-   - When to use which type
-   - Timeline: Understanding the fundamentals (1-2 hours reading)
+### 2. Creating Personas
+**File:** `core/02-creating-personas.md`
 
-2. **`references/core/02-research-methods.md`**
-   - Qualitative vs quantitative approaches
-   - Mixed methods (recommended approach)
-   - Data collection techniques (interviews, surveys, analytics)
-   - Sample sizes and statistical rigor
-   - Internal vs external research
-   - Timeline: 2-4 weeks for comprehensive research
+Step-by-step process for building effective personas:
+- **What to include:** Demographics, goals, pain points, behaviors, motivations, objections
+- **B2B 3-persona model:** P1 (User), P2 (Manager/Champion), P3 (Executive/Economic Buyer)
+- **Persona template:** Copy/paste structure with all components
+- **How many personas:** 3-5 maximum (why more fails)
+- **Storytelling techniques:** Creating compelling narratives
+- **Proto-personas:** Quick workshop method for fast start
+- **Frameworks:** Combining JTBD (why they buy) with personas (who they are)
 
-3. **`references/core/03-interview-techniques.md`**
-   - Adele Revella's 5 Rings of Buying Insight
-     - Priority Initiative (triggering events)
-     - Success Factors (desired outcomes)
-     - Perceived Barriers (objections)
-     - Decision Criteria (evaluation factors)
-     - Buyer's Journey (influences and process)
-   - Interview question banks (40+ questions)
-   - How many interviews to conduct (5-30 depending on homogeneity)
-   - Who to interview (successful customers, churned, closed-lost)
-   - Interview scripts and timing
-   - Timeline: 2-3 weeks for 10-15 interviews
+**Timeline:** 1-2 weeks for persona development
 
-4. **`references/core/04-persona-creation-process.md`**
-   - Step-by-step creation methodology
-   - What to include in personas (demographics, psychographics, behaviors)
-   - Persona components and format
-   - Storytelling and narrative structure
-   - How many personas to create (3-5 recommended)
-   - B2B 3-persona model (P1 User, P2 Manager, P3 Executive)
-   - Timeline: 1-2 weeks for persona development
+### 3. Validation & Testing
+**File:** `core/03-validation-testing.md`
 
-5. **`references/core/05-frameworks-methodologies.md`**
-   - Jobs-to-Be-Done (JTBD) framework
-   - Combining JTBD with personas (complementary approach)
-   - ICP (Ideal Customer Profile) vs Buyer Persona
-   - How they work together for segmentation
-   - Behavioral vs psychographic segmentation
-   - Timeline: Understanding frameworks (2-3 hours reading)
+HOW to validate personas with data (not assumptions):
+- **Survey validation:** Testing personas with real users
+- **Analytics validation:** Using behavioral data to confirm patterns
+- **A/B testing:** Testing persona-based campaigns
+- **Statistical methods:** Data-driven persona development
+- **Validation board:** Framework for tracking evidence
+- **When to update:** Quarterly reviews, annual updates
 
-6. **`references/core/06-validation-testing.md`**
-   - Data-driven persona validation methods
-   - Survey validation with real users
-   - Analytics and behavior tracking
-   - Persona validation board framework
-   - Statistical validation techniques
-   - A/B testing personas in campaigns
-   - Timeline: 1-2 weeks for validation
+**Timeline:** 1-2 weeks for validation
 
-7. **`references/core/07-activation-implementation.md`**
-   - Persona activation strategies
-   - Multi-channel persona-based campaigns
-   - Sales enablement with personas
-   - Persona-led messaging and content
-   - Case studies (Slack: 4.5x pipeline increase, 80% MQL-to-opp lift)
-   - Using personas throughout product lifecycle
-   - Timeline: 1-2 weeks for activation planning
+### 4. Activation & Campaigns
+**File:** `core/04-activation-campaigns.md`
 
-8. **`references/core/08-organization-rollout.md`**
-   - Socializing personas across teams
-   - Distribution methods (intranet, workshops, posters)
-   - Driving organization-wide adoption
-   - Two-way communication strategies
-   - Training and enablement
-   - Timeline: 1 week for internal rollout
+HOW to use personas in marketing and sales:
+- **Campaign activation:** Multi-channel persona-based campaigns
+- **Sales enablement:** Training teams to use personas
+- **Messaging alignment:** Tailoring messages by persona
+- **Organization rollout:** Distributing personas company-wide
+- **Adoption tactics:** Getting teams to actually use them
+- **Success metrics:** Slack 4.5x pipeline increase case study
 
-9. **`references/core/09-measurement-roi.md`**
-   - Measuring persona effectiveness
-   - Key metrics (revenue per persona, CAC, LTV, conversion rates)
-   - ROI calculation frameworks
-   - Segmentation-based ROI analysis
-   - Proving value to stakeholders
-   - Timeline: Ongoing measurement
+**Timeline:** 1-2 weeks for activation planning
 
-10. **`references/core/10-common-mistakes.md`**
-    - Creating too many personas
-    - Making assumptions without research
-    - Describing ideal vs actual customers
-    - Failing to update regularly
-    - Not sharing across teams
-    - Focusing only on demographics
-    - Skipping validation
-    - 7 other critical mistakes to avoid
+### 5. Common Mistakes
+**File:** `core/05-common-mistakes.md`
 
-### Advanced & Specialized Topics
+12 critical mistakes that kill persona effectiveness:
+- Creating too many personas (>5)
+- Making assumptions without customer research
+- Describing ideal vs actual customers
+- Failing to update regularly
+- Not sharing across teams
+- Focusing only on demographics
+- Skipping validation
+- Poor activation and adoption
+- And 4 more with fixes
 
-For specific challenges and advanced techniques:
+**Quick reference:** Read before creating personas
 
-**11. `references/advanced/01-workshop-facilitation.md`**
-- Running effective persona workshops
-- Stakeholder alignment exercises
-- Group sizes and participant selection (6-10 ideal)
-- Workshop structure and timing (15-20 min exercises, up to 2 days total)
-- Remote workshop best practices (Miro, Mural, Zoom)
-- Proto-persona creation workshops (2-4 hours)
-- Conflict resolution and consensus building
+## Advanced Guides (Specialized Topics)
 
-**12. `references/advanced/02-empathy-maps-storytelling.md`**
-- Empathy map framework (Says, Thinks, Does, Feels)
-- Personas vs empathy maps (complementary tools)
-- Persona story mapping
-- Narrative structure for personas
-- Creating compelling backstories
-- Persona journey mapping
+### 6. Workshop Facilitation
+**File:** `advanced/01-workshop-facilitation.md`
 
-**13. `references/advanced/03-negative-personas.md`**
-- What are negative/exclusionary personas
-- Why they matter (resource optimization, focus)
-- Examples (researchers, low-value customers, wrong fit)
-- How to identify negative personas
-- Using them to improve targeting
-- Benefits: deeper understanding of ideal personas
+Running effective persona workshops:
+- **Workshop structure:** 2-4 hour proto-persona session, or 1-2 day full workshop
+- **Participant selection:** 6-10 people (ideal size)
+- **Stakeholder alignment:** Getting buy-in from executives, sales, product
+- **Facilitation techniques:** Handling difficult stakeholders, conflict resolution
+- **Remote workshops:** Miro, Mural, Zoom best practices
+- **Exercises:** Proto-persona creation, validation planning
 
-**14. `references/advanced/04-inclusive-personas.md`**
-- Avoiding bias and stereotypes in personas
-- Inclusive representation (race, age, ability, gender, culture)
-- Thinking styles vs demographic assumptions
-- Removing implicit bias
-- First-person vs third-person approaches
-- Disability representation and accessibility
-- 2024 best practices for inclusive personas
+**When to use:** Need fast alignment or starting from zero
 
-**15. `references/advanced/05-ai-powered-personas.md`**
-- AI-generated personas using machine learning
-- Advantages over traditional personas (dynamic, real-time updates)
-- Tools and platforms (Delve.ai, UserPersona.dev, Xtensio AI)
-- Data sources (analytics, CRM, behavioral data)
-- Continuous learning and adaptation
-- Business impact (McKinsey: 15% revenue increase with personalization)
-- When to use AI personas vs traditional
+### 7. B2B Buying Committees
+**File:** `advanced/02-b2b-buying-committees.md`
 
-**16. `references/advanced/06-proto-personas.md`**
-- What are proto-personas (assumption-based)
-- Ad hoc vs proto vs data-driven personas
-- When to use proto-personas (Lean Startup, low UX maturity)
-- 2-4 hour workshop process
-- Validating proto-personas with research
-- Benefits and limitations
-- Transitioning to data-driven personas
+Mapping enterprise buying committees:
+- **Committee size:** 6.8-20 people per B2B deal
+- **Common roles:** Champions, blockers, budget controllers, end users, executives
+- **Enterprise personas:** Company-level vs individual-level
+- **Consensus building:** Addressing conflicting objectives
+- **Account-Based Marketing:** Using personas in ABM
 
-**17. `references/advanced/07-behavioral-psychographic.md`**
-- Psychographic segmentation (values, lifestyle, personality)
-- Behavioral segmentation (actions, interactions)
-- Why vs What (psychographic vs behavioral)
-- Advanced techniques (factor analysis, cluster analysis)
-- Combining demographic + behavioral + psychographic
-- Data collection methods
-- Hybrid segmentation approaches
+**When to use:** B2B SaaS, enterprise sales
 
-**18. `references/advanced/08-enterprise-b2b-personas.md`**
-- B2B buying committees (6.8-20 people)
-- Enterprise personas vs individual buyer personas
-- Consensus scenarios (3-5 personas)
-- Common B2B personas (champions, blockers, budget controllers, end users)
-- Account-Based Marketing (ABM) personas
-- Addressing conflicting objectives
-- Enterprise context in persona development
+### 8. Tools & Platforms
+**File:** `advanced/03-tools-platforms.md`
 
-**19. `references/advanced/09-persona-lifecycle.md`**
-- Persona lifecycle model (conception, birth, maturation, adulthood, retirement)
-- When and how to update personas (quarterly/annually minimum)
-- Keeping personas relevant
-- Persona evolution with product stages
-- Customer lifecycle mapping
-- Retiring outdated personas
+Comparison of persona creation tools:
+- **HubSpot Make My Persona:** Free, 7-stage process, instant download
+- **Xtensio:** AI-powered, $14/month, visual templates
+- **Miro:** Collaborative whiteboard templates
+- **AI-powered tools:** Delve.ai, UserPersona.dev, UXPressia
+- **Feature comparison:** Pricing, strengths, limitations
+- **Template downloads:** Where to get free templates
 
-**20. `references/advanced/10-tools-platforms.md`**
-- HubSpot Make My Persona (free, 7-stage process)
-- Xtensio (AI-powered, $14/month, up to 5 free)
-- Miro Customer Persona Template (collaborative)
-- Delve.ai (automated AI personas)
-- UserPersona.dev (free AI generation)
-- UXPressia AI Persona Generator
-- Comparison matrix of tools
-- Template downloads and resources
+**When to use:** Choosing tools or need templates
 
-## Quick Decision Trees
+### 9. AI-Powered Personas
+**File:** `advanced/04-ai-powered-personas.md`
+
+Automated persona generation using AI:
+- **How it works:** Machine learning on analytics, CRM, behavioral data
+- **Advantages:** Dynamic updates, real-time data, continuous learning
+- **Platforms:** Delve.ai, automated generation tools
+- **When to use:** Large user base, need scale, have data
+- **Business impact:** McKinsey 15% revenue increase with personalization
+- **Limitations:** Requires data infrastructure
+
+**When to use:** Large user base or existing analytics data
+
+### 10. Negative Personas
+**File:** `advanced/05-negative-personas.md`
+
+Defining who NOT to target:
+- **What they are:** Exclusionary personas (wrong-fit customers)
+- **Why they matter:** Resource optimization, improved targeting
+- **Examples:** Researchers, tire-kickers, low-value customers, wrong market fit
+- **How to identify:** Customer profitability analysis, churn patterns
+- **Using them:** Excluding from ad targeting, qualifying out in sales
+
+**When to use:** Wasting resources on wrong customers
+
+## Decision Trees
 
 ### "What's my starting point?"
 
-**I have NO personas and need to create them from scratch:**
-→ Start with: 01-foundations-history.md → 02-research-methods.md → 03-interview-techniques.md → 04-persona-creation-process.md
-→ Workshop approach: advanced/01-workshop-facilitation.md
-→ Timeline: 6-10 weeks for full data-driven process
+**I need personas NOW (limited time/budget):**
+```
+→ Run 2-4 hour workshop: advanced/01-workshop-facilitation.md
+→ Create proto-personas: core/02-creating-personas.md (proto-persona section)
+→ Validate later: core/01-research-interviews.md
+Timeline: 1-2 days
+```
 
-**I need personas FAST (Lean Startup, limited budget):**
-→ Use: advanced/06-proto-personas.md
-→ Create assumption-based personas in 2-4 hour workshop
-→ Validate with research later
-→ Timeline: 1-2 days for proto-personas
+**I have time for proper research (6-10 weeks):**
+```
+→ Interview customers: core/01-research-interviews.md
+→ Create personas: core/02-creating-personas.md
+→ Validate: core/03-validation-testing.md
+→ Activate: core/04-activation-campaigns.md
+Timeline: 6-10 weeks
+```
 
-**I have existing personas that need validation:**
-→ Read: 06-validation-testing.md
-→ Use surveys, analytics, A/B testing
-→ Timeline: 1-2 weeks
+**I have existing personas that aren't used:**
+```
+→ Skip to activation: core/04-activation-campaigns.md
+→ Organization rollout section
+Timeline: 2-3 weeks
+```
 
-**I have personas but they're not being used:**
-→ Read: 07-activation-implementation.md → 08-organization-rollout.md
-→ Focus on socialization and enablement
-→ Timeline: 2-3 weeks
-
-**I need to measure if personas are working:**
-→ Read: 09-measurement-roi.md
-→ Track revenue per persona, conversion rates, CAC, LTV
-→ Timeline: Ongoing measurement
+**I have personas but unsure if accurate:**
+```
+→ Validate them: core/03-validation-testing.md
+→ Update if needed: core/02-creating-personas.md
+Timeline: 1-2 weeks
+```
 
 ### "What research method should I use?"
 
-**I have budget and time (6-10 weeks):**
-→ Use: Mixed methods approach (qualitative + quantitative)
-→ Read: 02-research-methods.md
-→ 10-15 interviews + large-scale survey + analytics
-→ Most comprehensive and accurate
+**Budget + Time (6-10 weeks) + Need accuracy:**
+```
+→ Mixed methods (interviews + survey + analytics)
+→ Read: core/01-research-interviews.md (mixed methods section)
+Best for: Comprehensive understanding
+```
 
-**Limited budget, need accurate personas:**
-→ Use: Qualitative approach
-→ Read: 03-interview-techniques.md (Adele Revella's 5 Rings)
-→ 10-30 interviews (30 min each)
-→ High empathic strength, lower cost
+**Limited budget + Need depth:**
+```
+→ Qualitative interviews (10-30 interviews @ 30min)
+→ Read: core/01-research-interviews.md (5 Rings method)
+Best for: Understanding motivations and decisions
+```
 
-**Large user base, need scale:**
-→ Use: Quantitative approach with AI support
-→ Read: 02-research-methods.md + advanced/05-ai-powered-personas.md
-→ Survey thousands, use statistical clustering
-→ High representability, requires expertise
+**Large user base + Have analytics data:**
+```
+→ AI-powered automated personas
+→ Read: advanced/04-ai-powered-personas.md
+Best for: Scale and real-time updates
+```
 
-**No budget, need to start somewhere:**
-→ Use: Proto-personas
-→ Read: advanced/06-proto-personas.md
-→ Workshop with internal stakeholders (2-4 hours)
-→ Validate assumptions with research later
+**No budget + Need to start:**
+```
+→ Proto-persona workshop (2-4 hours)
+→ Read: advanced/01-workshop-facilitation.md
+Best for: Fast alignment, validate later
+```
 
 ### "What type of persona do I need?"
 
-**B2B SaaS product with buying committee:**
-→ Use: 3-persona model (P1 User, P2 Manager, P3 Executive)
-→ Read: 04-persona-creation-process.md + advanced/08-enterprise-b2b-personas.md
-→ Map to buying committee roles
+**B2B SaaS with buying committee:**
+```
+→ B2B 3-persona model (P1/P2/P3)
+→ Read: core/02-creating-personas.md + advanced/02-b2b-buying-committees.md
+Create: User, Manager/Champion, Executive personas
+```
 
 **B2C consumer product:**
-→ Use: Behavioral + psychographic segmentation
-→ Read: advanced/07-behavioral-psychographic.md
-→ Focus on motivations, values, lifestyle
+```
+→ Behavioral + psychographic personas
+→ Read: core/01-research-interviews.md + core/02-creating-personas.md
+Focus: Motivations, values, lifestyle
+```
 
-**Product with diverse user base:**
-→ Use: Inclusive personas
-→ Read: advanced/04-inclusive-personas.md
-→ Avoid bias, represent diversity
-
-**Need to exclude wrong-fit customers:**
-→ Create: Negative personas
-→ Read: advanced/03-negative-personas.md
-→ Define who you DON'T want to target
-
-### "How do personas relate to other frameworks?"
-
-**We use Jobs-to-Be-Done (JTBD):**
-→ Read: 05-frameworks-methodologies.md
-→ JTBD + Personas are complementary (who + why they buy)
-→ Use both together for best results
-
-**We have an ICP (Ideal Customer Profile):**
-→ Read: 05-frameworks-methodologies.md
-→ ICP = company level, Persona = individual level
-→ Break ICP down into personas
-
-**We use empathy maps:**
-→ Read: advanced/02-empathy-maps-storytelling.md
-→ Empathy maps visualize persona attitudes/behaviors
-→ Use empathy maps to build personas
-
-## Quick Reference: Typical Timelines
-
-Based on industry best practices from Product Marketing Alliance, Buyer Persona Institute, and Nielsen Norman Group:
-
-| Activity | Duration | Can be compressed? |
-|----------|----------|-------------------|
-| Proto-persona workshop | 2-4 hours | ⚠️ Not below 2 hours |
-| Qualitative research (interviews) | 2-3 weeks (10-15 interviews) | ✓ Yes, to 1 week minimum |
-| Quantitative research (survey) | 2-4 weeks (design + field + analysis) | ⚠️ Not below 2 weeks |
-| Persona creation/synthesis | 1-2 weeks | ✓ Yes, to 3-5 days |
-| Validation testing | 1-2 weeks | ✓ Yes, with rapid methods |
-| Stakeholder workshop | 1 day (or 2-4 hours) | ⚠️ Not recommended |
-| Organization rollout | 1 week | ⚠️ Not below 3-5 days |
-| Activation planning | 1-2 weeks | ✓ Yes, for simple activation |
-| **Total (data-driven process)** | **6-10 weeks** | **4 weeks minimum** |
-
-**Faster track** (proto-personas): 1-2 days
-**Standard track** (qualitative): 4-6 weeks
-**Comprehensive track** (mixed methods): 8-12 weeks
-**Enterprise track** (statistical AI-powered): 12-16 weeks
+**Need to exclude wrong customers:**
+```
+→ Negative personas
+→ Read: advanced/05-negative-personas.md
+Focus: Who NOT to target
+```
 
 ## Key Principles
 
 ### 1. Research is Non-Negotiable
+Personas without customer research are called "proto-personas" and must be validated. Interview 5-30 customers minimum depending on market homogeneity.
 
-Personas based on assumptions and internal opinions are called "proto-personas" and should be validated with real research. As Product Marketing Alliance states: "Personas cannot be built on internal assumptions - research is critical."
+### 2. Limit to 3-5 Personas
+More than 5 personas dilutes marketing efforts and causes decision paralysis. Focus on the most important segments.
 
-**The Rule:** Talk to real customers. 5-30 interviews minimum depending on market homogeneity.
+### 3. The B2B 3-Persona Model
+For B2B products, focus on exactly 3 personas:
+- **P1 (User):** Uses the product daily
+- **P2 (Manager/Champion):** Makes the decision, sells internally
+- **P3 (Executive):** Approves budget, cares about ROI
 
-### 2. Quality Over Quantity (3-5 Personas Max)
+### 4. Validate with Data, Not Opinions
+Use surveys, analytics, A/B tests, and behavioral tracking. Update quarterly or annually minimum.
 
-One of the biggest mistakes is creating too many personas. HubSpot, Product Marketing Alliance, and other experts recommend limiting yourself to **3-5 primary personas** to maintain focus.
+### 5. Activation is as Important as Creation
+65% of companies create personas, only 27% use them. Focus on rollout, enablement, and adoption.
 
-**Why:** More than 5 dilutes marketing efforts and causes analysis paralysis.
+### 6. Use Adele Revella's 5 Rings
+The proven framework for buyer interviews:
+1. **Priority Initiative:** What triggered the decision?
+2. **Success Factors:** What does success look like?
+3. **Perceived Barriers:** What concerns do they have?
+4. **Decision Criteria:** How do they evaluate solutions?
+5. **Buyer's Journey:** Who influences them?
 
-### 3. Personas Answer "Who" - JTBD Answers "Why"
+## Timelines Reference
 
-Personas and Jobs-to-Be-Done are complementary, not competitive:
-- **Personas:** Who is the customer? What are their characteristics?
-- **JTBD:** Why do they buy? What job are they hiring your product to do?
+| Activity | Duration | Can compress? |
+|----------|----------|---------------|
+| Proto-persona workshop | 2-4 hours | ⚠️ Not below 2 hours |
+| Customer interviews (10-15) | 2-3 weeks | ✓ Yes, to 1 week |
+| Survey research | 2-4 weeks | ⚠️ Not below 2 weeks |
+| Persona creation | 1-2 weeks | ✓ Yes, to 3-5 days |
+| Validation | 1-2 weeks | ✓ Yes, with rapid methods |
+| Activation planning | 1-2 weeks | ✓ Yes |
+| Organization rollout | 1 week | ⚠️ Not below 3 days |
+| **Total (full process)** | **6-10 weeks** | **4 weeks minimum** |
 
-**Best Practice:** Use both frameworks together for complete understanding.
+**Fast track:** 2-4 hours (proto-personas, validate later)
 
-### 4. Demographics Alone Are Not Enough
+## Common Pitfalls (Quick Reference)
 
-Traditional personas focus too much on demographics (age, title, income). Modern personas emphasize:
-- **Psychographics:** Values, attitudes, beliefs, motivations
-- **Behaviors:** Actions, patterns, decision-making process
-- **Context:** Situations, triggering events, success factors
+1. **Too many personas** → Keep to 3-5 max
+2. **Assumption-based** → Interview real customers
+3. **Ideal vs actual** → Describe who you HAVE, not who you WANT
+4. **Set and forget** → Update quarterly/annually
+5. **Marketing-only** → Share with sales, product, CS
+6. **Demographics only** → Go deeper: behaviors, motivations
+7. **No validation** → Test with data before rollout
+8. **Poor activation** → 65% create, 27% use—focus on rollout
 
-**Quote from experts:** "Don't describe the buyer; describe the buyer's decision."
+→ Full list with fixes: `core/05-common-mistakes.md`
 
-### 5. Validate, Don't Guess
+## The 5 Rings Interview Framework
 
-Use data to validate personas:
-- Surveys with real users
-- Analytics and behavioral tracking
-- A/B testing persona-based campaigns
-- Statistical analysis for large datasets
-
-**Data-driven personas are 30% more accurate** than assumption-based personas (research from ResearchGate).
-
-### 6. Activation is as Important as Creation
-
-Personas only deliver value if teams use them. Research shows:
-- 65% of companies create personas
-- Only 27% actively use them (Cintell study)
-
-**Critical Success Factor:** Socialize personas across the organization, enable teams, check adoption.
-
-### 7. Update Regularly (Annual Minimum)
-
-Customer behavior, markets, and needs change. Personas have a lifecycle:
-- **Annual minimum:** Review and update annually
-- **Quarterly recommended:** For fast-moving markets
-- **Major changes:** New product launches, market shifts, competitive changes
-
-**Persona Retirement:** Outdated personas should be retired, not left to confuse teams.
-
-### 8. Use The Right Tool for The Right Job
-
-Different situations require different approaches:
-
-| Situation | Best Approach | Timeline |
-|-----------|--------------|----------|
-| Startup, limited budget | Proto-personas → Validate later | 1-2 days |
-| Need empathic understanding | Qualitative interviews (5 Rings) | 4-6 weeks |
-| Large user base, need scale | Quantitative + AI-powered | 8-12 weeks |
-| Comprehensive accuracy | Mixed methods (qual + quant) | 8-12 weeks |
-| Already have data | AI-powered automated | 2-3 weeks |
-
-### 9. Avoid The 8 Deadly Mistakes
-
-Research across HubSpot, Content Marketing Institute, and others identifies:
-
-1. Creating too many personas (>5)
-2. Making assumptions without customer research
-3. Describing ideal vs actual customers
-4. Failing to update regularly
-5. Not sharing across teams
-6. Focusing only on demographics
-7. Skipping validation
-8. Poor activation and adoption
-
-**Prevention:** Follow the processes in this skill.
-
-### 10. Inclusion and Bias Awareness
-
-Modern personas (2024 best practices) emphasize:
-- Representing diversity (race, age, ability, gender)
-- Avoiding stereotypes and implicit bias
-- Using thinking styles vs demographic assumptions
-- First-person narrative for empathy
-- Accessibility considerations
-
-**Research shows:** Inclusive personas lead to broader market appeal and better products.
-
-## The Adele Revella 5 Rings Framework
-
-The Buyer Persona Institute's proven methodology for buyer interviews:
+Adele Revella's proven method for buyer interviews (10-30 interviews @ 30min):
 
 **Ring 1: Priority Initiative**
-- What triggered the decision to evaluate solutions?
-- What changed? What pain became unbearable?
+→ What triggered the decision to evaluate solutions?
 
 **Ring 2: Success Factors**
-- What does success look like?
-- What tangible/intangible rewards do they expect?
+→ What tangible/intangible rewards do they expect?
 
 **Ring 3: Perceived Barriers**
-- What concerns or doubts do they have?
-- Why might they think you can't deliver success?
+→ What concerns make them doubt you can deliver?
 
 **Ring 4: Decision Criteria**
-- What factors matter in evaluating solutions?
-- What's the ideal solution in their mind?
+→ What factors matter in evaluating solutions?
 
 **Ring 5: Buyer's Journey**
-- Who influences the decision?
-- How do they evaluate options?
-- What information sources do they trust?
+→ Who influences them? How do they evaluate?
 
-**Process:** 10-30 interviews of 30 minutes each. Start with recent buyers (won and lost).
+→ Complete guide: `core/01-research-interviews.md`
 
-## The B2B 3-Persona Model
+## B2B 3-Persona Model
 
-For B2B SaaS and enterprise products, research recommends focusing on just **3 buyer personas**:
+**P1 - The User (Primary Beneficiary)**
+- Uses solution daily, most hands-on experience
+- Cares about: Does it work? Is it easy?
+- Message focus: Features, usability, workflow
 
-**Persona 1 (P1) - The User:**
-- Primary beneficiary who uses the solution daily
-- Cares about: Does it work? Is it easy? Will it make my job easier?
-- Focus messaging on: Features, usability, workflow improvements
+**P2 - The Manager/Champion (Decision-Maker)**
+- Oversees team, main decision-maker or internal champion
+- Cares about: Will it improve team performance?
+- Message focus: Team outcomes, management benefits
 
-**Persona 2 (P2) - The Manager/Champion:**
-- Oversees the function or team that benefits
-- Main decision-maker or internal champion
-- Cares about: Can I sell this internally? Will it improve my team's performance?
-- Focus messaging on: Team outcomes, management benefits, political cover
+**P3 - The Executive (Economic Buyer)**
+- Final approver, controls budget, includes blockers (Legal, IT, Finance)
+- Cares about: ROI? Risk? Strategic alignment?
+- Message focus: Business impact, financial metrics
 
-**Persona 3 (P3) - The Executive/Economic Buyer:**
-- Final approver, controls budget
-- Includes functional blockers (Legal, IT, Finance)
-- Cares about: What's the ROI? What's the risk? Strategic alignment?
-- Focus messaging on: Business impact, financial metrics, risk mitigation
+**Strategy:** Create separate campaigns for each—don't use same message for all three.
 
-**Strategy:** Create separate web pages and campaigns for each persona - don't try to address all three with the same message.
+→ Complete guide: `core/02-creating-personas.md`
 
-## Tools & Templates (Recommended)
+## Tools Quick Reference
 
-Based on research from Delve.ai, Product Marketing Alliance, and tool reviews:
+**Free:**
+- HubSpot Make My Persona (7-stage guided process)
+- UserPersona.dev (AI-powered)
+- Miro templates
 
-### Free Tools
-- **HubSpot Make My Persona:** 7-stage guided process, 100% free, instant download
-- **UserPersona.dev:** Free AI-powered persona generation
-- **Miro Customer Persona Template:** Free collaborative whiteboard
+**Paid:**
+- Xtensio: $14/month, AI-powered, visual
+- Delve.ai: Automated AI personas, enterprise pricing
+- UXPressia: Journey mapping + personas, $25/month
 
-### Paid Tools (Best Value)
-- **Xtensio:** AI-powered, visual templates, $14/month (5 personas free)
-- **Delve.ai:** Automated AI personas from analytics, enterprise pricing
-- **UXPressia:** Journey mapping + personas, starts at $25/month
-
-### Recommended Template Components
-1. **Basic Info:** Name, photo, demographic snapshot
-2. **Background:** Job, company size, industry, experience
-3. **Goals:** What they're trying to achieve (3-5 bullets)
-4. **Pain Points:** Challenges and frustrations (3-5 bullets)
-5. **Behaviors:** How they work, research, make decisions
-6. **Motivations:** What drives them (psychographics)
-7. **Objections:** Barriers to purchase (5 Rings: Perceived Barriers)
-8. **Decision Criteria:** How they evaluate solutions (5 Rings)
-9. **Information Sources:** Where they learn (LinkedIn, podcasts, peers)
-10. **Quote:** In their own words (from interviews)
-
-## Common Pitfalls to Avoid
-
-Based on comprehensive research from multiple sources:
-
-1. **Too Many Personas** → Keep to 3-5 max; more dilutes focus
-2. **Assumption-Based** → Always validate with real customer research
-3. **Ideal vs Actual** → Describe customers you HAVE, not customers you WANT
-4. **Set and Forget** → Update annually minimum; quarterly for fast markets
-5. **Marketing-Only** → Share with sales, product, CS, support - entire org
-6. **Demographics Only** → Go deeper: psychographics, behaviors, motivations
-7. **No Negative Personas** → Define who you DON'T want to target
-8. **Poor Socialization** → Personas in a drawer help nobody; activate them
-9. **No Measurement** → Track persona-specific metrics (revenue, conversion, CAC)
-10. **Ignoring Inclusion** → Avoid bias, represent diversity, use thinking styles
-11. **Skipping Validation** → Test personas with data before full rollout
-12. **Generic Names** → Make them memorable and relatable
-
-## What's Included in This Skill
-
-**✅ Complete Research Coverage:**
-- Qualitative, quantitative, and mixed methods
-- Interview techniques and question banks
-- Adele Revella's 5 Rings methodology
-- Sample sizes and statistical validation
-
-**✅ Multiple Persona Types:**
-- Buyer personas (B2B focus)
-- User personas (UX/Product focus)
-- Proto-personas (Lean Startup)
-- Negative personas (Exclusionary)
-- AI-powered personas (Automated)
-- Inclusive personas (Bias-free)
-
-**✅ Advanced Frameworks:**
-- Jobs-to-Be-Done (JTBD) integration
-- ICP vs Persona differentiation
-- Behavioral + psychographic segmentation
-- Empathy maps + storytelling
-- Enterprise buying committees
-
-**✅ Practical Implementation:**
-- Workshop facilitation guides
-- Organization-wide rollout strategies
-- Activation in marketing campaigns
-- Sales enablement integration
-- ROI measurement frameworks
-
-**✅ Tools & Resources:**
-- Platform comparisons (HubSpot, Xtensio, Miro, AI tools)
-- Template recommendations
-- Question banks for interviews
-- Validation methods
-- Best practice examples
-
-**✅ Expert Methodologies:**
-- Alan Cooper (persona creator)
-- Adele Revella (Buyer Persona Institute)
-- Product Marketing Alliance
-- Nielsen Norman Group
-- April Dunford (positioning context)
+→ Full comparison: `advanced/03-tools-platforms.md`
 
 ## Getting Started
 
-**Step 1: Assess Your Situation**
+**Step 1: Choose your path**
 
-Choose your path:
+- [ ] **Creating from scratch** → Start with core/01-research-interviews.md
+- [ ] **Need personas fast** → Start with advanced/01-workshop-facilitation.md
+- [ ] **Validating existing** → Jump to core/03-validation-testing.md
+- [ ] **Activating unused** → Jump to core/04-activation-campaigns.md
 
-- **[ ] I need to create personas from scratch with full research**
-  → Start with 01-foundations-history.md → 02-research-methods.md → 03-interview-techniques.md
-  → Timeline: 6-10 weeks
+**Step 2: Avoid these mistakes**
 
-- **[ ] I need personas fast (startup, limited budget)**
-  → Go to advanced/06-proto-personas.md
-  → Run 2-4 hour stakeholder workshop
-  → Timeline: 1-2 days (validate later)
+Read `core/05-common-mistakes.md` before starting (5 min read)
 
-- **[ ] I have personas but need to validate them**
-  → Read 06-validation-testing.md
-  → Timeline: 1-2 weeks
+**Step 3: Use the decision trees**
 
-- **[ ] I have personas but they're not being used**
-  → Read 07-activation-implementation.md + 08-organization-rollout.md
-  → Timeline: 2-3 weeks
+See "Decision Trees" section above to find your specific scenario
 
-- **[ ] I need to measure persona ROI**
-  → Read 09-measurement-roi.md
-  → Set up tracking (ongoing)
+**Step 4: Follow the process**
 
-**Step 2: Load Relevant References**
+Don't skip validation or activation—personas only work if they're accurate and used
 
-Only read what you need for your specific situation. Use the decision trees above to find the right starting point.
+**Step 5: Measure results**
 
-**Step 3: Choose Your Research Method**
-
-Match method to your constraints:
-- **Budget + Time:** Mixed methods (qual + quant)
-- **Limited Budget:** Qualitative interviews (5 Rings)
-- **Large Scale:** Quantitative + AI
-- **No Budget:** Proto-personas
-
-**Step 4: Follow The Process**
-
-Don't skip validation or activation - personas only work if they're accurate and used.
-
-**Step 5: Measure and Iterate**
-
-Track persona-specific metrics. Update quarterly or annually.
-
-## Support & Customization
-
-This skill adapts to your context:
-
-- **Adjust timelines** based on your constraints
-- **Choose research methods** that fit your budget
-- **Start with proto-personas** and validate later if needed
-- **Focus on activation** if personas already exist
-- **Scale to company size** (startup vs enterprise approaches differ)
-- **Industry-specific adaptations** (B2B vs B2C, SaaS vs physical products)
-
-The frameworks are research-backed, but execution should match your situation.
+Track persona-specific metrics: revenue per persona, conversion rates, CAC, LTV
 
 ---
 
-**Ready to start?** Tell me:
-1. Do you have existing personas or starting from scratch?
-2. What's your timeline and budget?
-3. B2B or B2C?
-4. What's your biggest challenge with personas?
+**Ready to start?**
 
-I'll guide you to the exact resources you need.
+Tell me:
+1. Starting from scratch or have existing personas?
+2. Timeline and budget constraints?
+3. B2B or B2C?
+4. Biggest challenge with personas?
+
+I'll guide you to the right resources.
