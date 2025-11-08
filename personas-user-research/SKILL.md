@@ -420,3 +420,24 @@ Tell me:
 4. Biggest challenge with personas?
 
 I'll guide you to the right resources.
+
+## Templates & Assets
+
+All templates are ready to use in `assets/templates/`:
+
+### Core Templates
+- **`persona-one-pager.md`** - Complete persona template (copy/paste ready)
+- **`30-minute-interview-script.md`** - Full interview guide with 5 Rings
+- **`proto-persona-workshop-canvas.md`** - 2-4 hour workshop template
+
+### Validation & Testing
+- **`validation-board.md`** - Track evidence for each assumption
+- **`survey-template.md`** - 20-30 question validation survey
+
+### Activation & Rollout
+- **`activation-checklist.md`** - Week-by-week rollout plan
+
+### Advanced
+- **`negative-persona-template.md`** - Document exclusionary personas
+
+**See:** `assets/README.md` for details on each template
