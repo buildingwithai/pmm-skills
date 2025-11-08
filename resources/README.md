@@ -1,89 +1,135 @@
 # Shared Resources
 
-This directory contains **cross-skill resources** that inform and support multiple PMM skills.
+This directory contains **cross-skill research and resources** that inform skill creation. This is the AI's workspace - **not included in downloadable skills**.
+
+## Purpose
+
+Resources serve as a "research lab notebook" that:
+
+✅ **Documents how skills were built** - research sources, frameworks, decisions
+✅ **Enables future updates** - AI can review and identify outdated content
+✅ **Provides context** - even in new conversations, understand research trail
+✅ **Speeds up related skills** - reuse research across similar skills
+✅ **Shows reasoning** - why we structured things a certain way
 
 ## Structure
 
 ```
 resources/
-├── research/           # Industry research and analysis
-├── frameworks/         # Standalone PMM frameworks
-├── courses/           # Course notes and transcripts
-└── templates/         # Generic, cross-skill templates
+├── README.md           # This file
+└── pmm/               # Product Marketing research
+    ├── research/      # Industry research by topic
+    ├── frameworks/    # Standalone PMM frameworks
+    ├── courses/       # Course notes and transcripts
+    └── templates/     # Generic cross-skill templates
+```
+
+**Future expansion:**
+```
+resources/
+├── pmm/               # Product Marketing research
+├── sales/             # Sales research (future)
+├── engineering/       # Engineering research (future)
+└── shared/            # Cross-domain resources (future)
 ```
 
 ## What Goes Here vs. In Skills
 
-**Put it in `resources/` if:**
+**Put it in `resources/pmm/` if:**
+- It's research that informed a skill
 - It's referenced by multiple skills
-- It's general PMM knowledge or methodology
-- It's foundational research or framework
-- It's a generic template used across workflows
+- It's a standalone framework or methodology
+- It's course materials or learnings
+- It helps AI understand how to build/update skills
 
-**Put it in `[skill]/references/` if:**
+**Put it in `pmm-skills/[skill-name]/` if:**
 - It's specific to one skill's workflow
 - It's a step-by-step guide for that skill
-- It's closely tied to the skill's process
+- It's a template for that specific workflow
+- It goes in the downloadable skill
 
-**Put it in `[skill]/assets/` if:**
-- It's a template specific to that skill
-- It's a tool or checklist for that workflow
+## Directory Details
 
-## Directories
+### `/pmm/research/`
+Industry research and analysis organized by topic.
 
-### `/research/`
-Industry research, analysis, and best practices organized by topic.
+**See**: [pmm/research/README.md](./pmm/research/README.md)
 
 **Topics:**
-- `messaging/` - Message testing, frameworks, analysis
-- `positioning/` - Positioning research and methodologies
-- `gtm/` - Go-to-market strategy and launch planning
-- `competitive-intelligence/` - Competitive analysis research
+- `messaging/` - Message testing, copywriting, frameworks
+- `positioning/` - Positioning methodologies, category creation
+- `gtm/` - Go-to-market strategy, launch planning
+- `competitive-intelligence/` - Competitive analysis, win/loss
 - `pricing/` - Pricing strategy and research
 - `customer-research/` - User research, JTBD, interviews
 
-**Example files:**
-- `messaging/message-testing-platforms-comparison-2025.md`
-- `positioning/category-creation-research-2024.md`
+### `/pmm/frameworks/`
+Standalone frameworks referenced by multiple skills.
 
-### `/frameworks/`
-Standalone frameworks and methodologies used across multiple skills.
+**See**: [pmm/frameworks/README.md](./pmm/frameworks/README.md)
 
 **Examples:**
-- `april-dunford-positioning.md` - Obviously Awesome positioning framework
-- `meddic-sales-methodology.md` - MEDDIC/MEDDICC qualification
-- `jobs-to-be-done.md` - JTBD research framework
-- `pain-claim-gain-messaging.md` - Anthony Pierri's messaging method
+- April Dunford's positioning framework
+- MEDDIC/MEDDICC sales methodology
+- Jobs-to-be-done research framework
+- Pain-Claim-Gain messaging method
 
-### `/courses/`
-Notes and transcripts from PMM courses and training.
+### `/pmm/courses/`
+Notes and transcripts from PMM courses.
 
-**Structure:**
-```
-courses/
-├── course-name/
-│   ├── README.md              # Course overview & recommendation
-│   ├── module-01-notes.md
-│   ├── module-02-notes.md
-│   └── key-takeaways.md
-```
+**See**: [pmm/courses/README.md](./pmm/courses/README.md)
 
-### `/templates/`
-Generic templates used across multiple PMM skills.
+**Structure**: Each course gets its own directory with module notes and key takeaways.
 
-**Examples:**
-- `persona-templates/` - Generic buyer persona templates
-- `market-research/` - Market sizing, TAM/SAM/SOM
-- `launch-plans/` - Generic launch planning templates
+### `/pmm/templates/`
+Generic templates used across multiple skills.
 
-**Note:** Skill-specific templates go in `[skill]/assets/` instead.
+**See**: [pmm/templates/README.md](./pmm/templates/README.md)
+
+**Note:** Only cross-skill generic templates go here. Skill-specific templates go in `pmm-skills/[skill-name]/assets/`.
+
+## For AI: How to Use Resources
+
+### When Building a New Skill
+
+1. **Check existing research** - `pmm/research/[topic]/`
+2. **Review related frameworks** - `pmm/frameworks/`
+3. **Conduct new research** - Add findings to `pmm/research/`
+4. **Document decisions** - Why you chose certain frameworks, sources
+5. **Build the skill** - Use research to create comprehensive skill
+6. **Keep research separate** - Don't include research files in skill downloads
+
+### When Updating an Existing Skill
+
+1. **Review original research** - `pmm/research/[topic]/`
+2. **Check dates** - Is research current?
+3. **Re-research if needed** - Update with new findings
+4. **Update skill** - Reflect new research in skill content
+5. **Document changes** - Note what changed in research files
+
+### When Starting a New Conversation
+
+1. **Read MAINTENANCE.md** - Understand upkeep protocols
+2. **Check research freshness** - Review dates on research files
+3. **Proactively flag outdated content** - Suggest updates to user
+4. **Review before using** - Don't assume research is current
+
+## Maintenance
+
+See [MAINTENANCE.md](../MAINTENANCE.md) for detailed protocols on:
+- How to assess research freshness
+- When to update content
+- How to document new research
+- Self-sustaining maintenance practices
 
 ## Contributing
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines on adding resources.
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for:
+- How to add research
+- How to document frameworks
+- How to organize course materials
+- Content quality standards
 
-**Quick tips:**
-- Use descriptive file names with dates when relevant
-- Include source attribution
-- Organize by topic
-- Link to related skills that use this resource
+---
+
+**Remember:** Resources are the foundation that makes skills comprehensive and valuable. Document thoroughly!
