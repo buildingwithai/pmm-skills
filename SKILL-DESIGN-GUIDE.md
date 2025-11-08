@@ -6,14 +6,437 @@ This guide provides architectural patterns, organizational best practices, and f
 
 ## Table of Contents
 
+- [Folder Structure Reference](#folder-structure-reference)
 - [Token Costs & Limits](#token-costs--limits)
 - [File & Folder Limits](#file--folder-limits)
 - [Organizational Patterns](#organizational-patterns)
 - [When to Use Which Structure](#when-to-use-which-structure)
+- [Structure Comparison: Core/Advanced vs Phase-Based](#structure-comparison-coreadvanced-vs-phase-based)
 - [Decision Framework](#decision-framework)
 - [Common Pitfalls](#common-pitfalls)
 
 ---
+
+## Folder Structure Reference
+
+Quick reference for what goes in each folder and when to use it.
+
+### Required Folders
+
+#### `SKILL.md` (file, not folder)
+**Purpose:** Navigation hub and skill entry point
+
+**What goes here:**
+- YAML frontmatter (`name`, `description`)
+- Overview of the skill
+- When to use this skill
+- Decision trees ("if you need X → read Y")
+- Navigation guide to reference files
+- Quick reference cards
+
+**Size limit:** <500 lines (target 400-450)
+
+**What NOT to put here:**
+- Detailed instructions (those go in `references/`)
+- Long explanations or tutorials
+- Examples or case studies
+- Complete frameworks
+
+**Why:**
+- SKILL.md loads when skill is triggered (Level 2)
+- Should be fast to scan
+- User needs to quickly understand and navigate
+
+---
+
+#### `references/` (required)
+**Purpose:** Detailed instructions, guides, and workflows
+
+**What goes here:**
+- Step-by-step process guides
+- Framework explanations
+- Methodology deep dives
+- Workflow orchestration
+- Best practices
+
+**Organization within:** Use one of the patterns below
+- `core/` + `advanced/` (default)
+- `phase-1/`, `phase-2/`, `phase-3/` (for phased processes)
+- `for-[audience]/` (for multi-audience skills)
+- See [Organizational Patterns](#organizational-patterns) for full list
+
+**File naming:**
+- Core/sequential: `01-name.md`, `02-name.md`, `03-name.md`
+- Advanced/named: `descriptive-name.md`
+
+**Size guidelines:**
+- Individual files: 200-600 lines
+- Files per subfolder: 5-15 files
+- Total in references/: Most of your skill content
+
+**What NOT to put here:**
+- Templates (those go in `assets/`)
+- Glossary definitions (those go in `glossary/`)
+- Case studies (those go in `examples/`)
+
+**Why:**
+- Progressive loading (Claude reads via bash as needed)
+- Can contain extensive content without context penalty
+- Organizes related content together
+
+---
+
+#### `assets/` (required)
+**Purpose:** Ready-to-use templates, checklists, and tools
+
+**What goes here:**
+- Templates (messaging canvas, personas, etc.)
+- Checklists (launch checklist, workshop prep)
+- Scripts (Python, bash for automation)
+- Blank forms or worksheets
+
+**Organization within:**
+- **Flat** (5 or fewer assets): `assets/template-name.md`
+- **Organized** (6+ assets):
+  ```
+  assets/
+  ├── templates/
+  ├── checklists/
+  └── scripts/
+  ```
+
+**File naming:**
+- Descriptive: `messaging-canvas-template.md`
+- Include type: `launch-checklist.md`, `workshop-prep-checklist.md`
+
+**Size guidelines:**
+- Templates can be any size (users copy and fill in)
+- Each template should be standalone
+
+**What NOT to put here:**
+- Instructions on HOW to use templates (put in `references/`)
+- Explanations or tutorials
+- Completed examples (those go in `examples/`)
+
+**Why:**
+- Clear separation: guides vs tools
+- Easy to find templates quickly
+- Templates don't bloat instruction files
+
+---
+
+### Optional Folders (Add When Needed)
+
+#### `glossary/` (optional)
+**Purpose:** Definitions, acronyms, and terminology reference
+
+**What goes here:**
+- Acronym definitions (MEDDIC, JTBD, ICP, TAM/SAM/SOM)
+- Framework quick references
+- Industry terminology
+- Concept definitions
+
+**Organization within:**
+```
+glossary/
+├── acronyms.md        # All acronyms in one file
+└── frameworks.md      # Framework summaries
+```
+
+**When to add:**
+- Skill uses **10+ specialized terms or acronyms**
+- Same terms are referenced across multiple files
+- Users frequently need terminology lookup
+
+**File format:**
+```markdown
+**ICP** - Ideal Customer Profile
+- Definition: The specific type of company that gets most value
+- Example: "Mid-market B2B SaaS with 50-200 employees"
+- Used in: references/core/01-positioning.md
+```
+
+**What NOT to put here:**
+- Detailed framework explanations (put in `references/`)
+- How to apply frameworks (put in `references/`)
+
+**Why:**
+- Prevents repeating definitions across files
+- Quick reference for Claude and users
+- Single source of truth
+
+**Example from our messaging skill:**
+- `glossary/acronyms.md` - MEDDIC, P1/P2/P3, ICP, TAM/SAM/SOM, HiPPO
+- `glossary/pmm-frameworks.md` - April Dunford, Pain-Claim-Gain, JTBD
+
+---
+
+#### `examples/` (optional)
+**Purpose:** Case studies, real-world applications, before/after examples
+
+**What goes here:**
+- Case studies with metrics ("Appcues improved 73%")
+- Before/after comparisons
+- Real company examples
+- Workshop transcripts (anonymized)
+- Sample outputs
+
+**Organization within:**
+```
+examples/
+├── case-study-[company].md
+├── before-after-messaging.md
+└── workshop-transcript.md
+```
+
+**When to add:**
+- You have **3+ case studies or lengthy examples**
+- Examples are 200+ lines each
+- Want to separate "show" from "tell"
+
+**File format:**
+```markdown
+# Example: [Company Name]
+
+## Context
+- Company: [name]
+- Challenge: [what they faced]
+- Timeline: [how long]
+
+## What They Did
+[Specific actions]
+
+## Results
+- Metric 1: [X% improvement]
+- Metric 2: [specific outcome]
+
+## Key Takeaways
+[Lessons learned]
+```
+
+**What NOT to put here:**
+- Instructions or how-tos (put in `references/`)
+- Templates (put in `assets/`)
+
+**Why:**
+- Keeps instruction files focused on "how"
+- Examples can be long without bloating guides
+- Easy to add new examples over time
+
+---
+
+#### `workflows/` (optional)
+**Purpose:** End-to-end process guides that combine multiple techniques
+
+**What goes here:**
+- Complete process orchestration
+- How to combine multiple reference files
+- Timeline showing which techniques to use when
+- "Playbooks" for full execution
+
+**Organization within:**
+```
+workflows/
+├── full-[skill-name]-process.md
+├── quick-[abbreviated]-workflow.md
+└── [specific-scenario]-workflow.md
+```
+
+**When to add:**
+- Skill teaches **individual techniques** in references/
+- Users need guidance on **combining techniques**
+- Multiple valid "paths" through the skill exist
+
+**Difference from references/:**
+- **references/**: Individual techniques (positioning, messaging, testing)
+- **workflows/**: How to combine them ("Week 1: positioning, Week 2: messaging, Week 3: testing")
+
+**File format:**
+```markdown
+# Workflow: Full Positioning to Launch
+
+## Timeline: 9-12 weeks
+
+### Phase 1: Positioning (Week 1)
+→ Use: references/core/01-positioning.md
+→ Output: Completed positioning
+
+### Phase 2: Messaging (Week 2-3)
+→ Use: references/core/02-messaging.md
+→ Output: Message architecture
+
+### Phase 3: Testing (Week 4)
+→ Use: references/core/07-testing.md
+→ Output: Validated messages
+```
+
+**What NOT to put here:**
+- Detailed technique explanations (put in `references/`)
+- Templates (put in `assets/`)
+
+**Why:**
+- references/ stay focused on single techniques
+- Workflows show real combination
+- Users can follow end-to-end OR pick à la carte
+
+**Example use in messaging skill:**
+- `workflows/full-positioning-to-launch.md` - Complete 12-week process
+- `workflows/quick-messaging-refresh.md` - Fast 2-week update
+- `workflows/competitive-repositioning.md` - Responding to competitor
+
+---
+
+#### `playbooks/` (optional)
+**Purpose:** Pre-built guides for specific recurring scenarios
+
+**What goes here:**
+- Scenario-specific guides with context
+- Pre-tested approaches for common situations
+- Customized combinations of techniques for specific goals
+
+**Organization within:**
+```
+playbooks/
+├── [scenario-1].md
+├── [scenario-2].md
+└── [scenario-3].md
+```
+
+**When to add:**
+- Users have **specific, recurring scenarios**
+- Scenarios require **customized combination** of techniques
+- You can provide **pre-tested playbooks**
+
+**Difference from workflows/:**
+- **Workflows:** Generic process (works for any situation)
+- **Playbooks:** Specific scenario with context and tactics
+
+**Example:**
+```
+Workflow: Full Positioning to Launch
+[Generic: works for any product in any market]
+
+Playbook: New Product Launch in Crowded Market
+[Specific: new product, high competition, need differentiation]
+- Includes specialized positioning for crowded markets
+- Messaging focused on differentiation
+- Launch tactics for breaking through noise
+```
+
+**File format:**
+```markdown
+# Playbook: [Scenario Name]
+
+## When to Use This Playbook
+- Situation: [specific context]
+- Signs you need this: [indicators]
+
+## Context
+[What makes this scenario unique]
+
+## Approach
+### Step 1: [Phase]
+→ Use: [which references]
+→ Customize: [specific to this scenario]
+
+## Tactics Specific to This Scenario
+[What's different from generic workflow]
+
+## Expected Outcomes
+[What success looks like]
+
+## Timeline
+[Realistic timeline for this scenario]
+```
+
+**What NOT to put here:**
+- Generic processes (put in `workflows/`)
+- Detailed techniques (put in `references/`)
+
+**Why:**
+- Faster than building from scratch
+- Pre-tested for specific contexts
+- Shows best practices for common scenarios
+
+**Example use in messaging skill:**
+- `playbooks/new-product-launch.md` - New product, cold market
+- `playbooks/repositioning-existing.md` - Established product, need refresh
+- `playbooks/crisis-response.md` - Negative event, need fast response
+- `playbooks/competitive-threat.md` - New competitor entered market
+
+---
+
+### Folder Summary Table
+
+| Folder | Required? | Purpose | When to Use | Max Files |
+|--------|-----------|---------|-------------|-----------|
+| `SKILL.md` | ✅ Yes | Navigation hub | Always | 1 file, <500 lines |
+| `references/` | ✅ Yes | Detailed guides | Always | Most content, 5-15 per subfolder |
+| `assets/` | ✅ Yes | Templates & tools | Always | Unlimited (organize at 6+) |
+| `glossary/` | ⚠️ Optional | Definitions | 10+ acronyms/terms | 2-3 files |
+| `examples/` | ⚠️ Optional | Case studies | 3+ examples | Unlimited |
+| `workflows/` | ⚠️ Optional | Process combos | Multiple paths | 3-5 workflows |
+| `playbooks/` | ⚠️ Optional | Scenario guides | Recurring scenarios | 5-10 playbooks |
+
+---
+
+### Decision: Which Folders to Include?
+
+**Minimum viable skill:**
+```
+skill-name/
+├── SKILL.md
+├── references/
+│   └── core/
+└── assets/
+```
+
+**Simple skill (3-8 files):**
+```
+skill-name/
+├── SKILL.md
+├── references/
+│   ├── core/
+│   └── advanced/
+└── assets/
+```
+
+**Moderate skill (9-15 files):**
+```
+skill-name/
+├── SKILL.md
+├── glossary/          # If 10+ terms
+├── references/
+│   ├── core/
+│   └── advanced/
+├── assets/
+└── examples/          # If 3+ case studies
+```
+
+**Complex skill (16-25 files):**
+```
+skill-name/
+├── SKILL.md
+├── glossary/
+├── references/
+│   ├── phase-1/
+│   ├── phase-2/
+│   ├── phase-3/
+│   └── advanced/
+├── workflows/         # Show how to combine
+├── assets/
+│   ├── templates/
+│   └── checklists/
+└── examples/
+```
+
+**Rule of thumb:**
+- Start minimal (SKILL.md + references/ + assets/)
+- Add folders only when you hit the threshold
+- Don't over-organize simple skills
+
+---
+
 
 ## Token Costs & Limits
 
@@ -768,6 +1191,393 @@ START: How many total files will this skill have?
 ```
 
 ---
+
+## Structure Comparison: Core/Advanced vs Phase-Based
+
+The two most common structures for PMM skills are **Core/Advanced** and **Phase-Based**. Here's how to choose between them.
+
+### Pattern 1: Core + Advanced (Default)
+
+**Structure:**
+```
+skill-name/
+├── SKILL.md
+├── references/
+│   ├── core/              # Sequential workflow (01-, 02-, 03-)
+│   │   ├── 01-step-one.md
+│   │   ├── 02-step-two.md
+│   │   └── 03-step-three.md
+│   └── advanced/          # Named files (situational)
+│       ├── edge-case.md
+│       └── power-tip.md
+└── assets/
+```
+
+**Best for:**
+- ✅ Linear, sequential workflows
+- ✅ Simple to moderate complexity (3-15 files)
+- ✅ Clear "main path" that most users follow
+- ✅ Advanced features are truly optional
+
+**Characteristics:**
+- **core/**: Numbered files (01-, 02-) showing sequence
+- **advanced/**: Named files loaded as needed
+- Most users go through core/ in order
+- Advanced/ only when specific need arises
+
+**SKILL.md decision trees:**
+```markdown
+**Main workflow (most users):**
+→ Read: core/01-positioning.md → 02-messaging.md → 03-rollout.md
+
+**Specific advanced needs:**
+→ Crisis messaging: advanced/crisis-messaging.md
+→ Pricing messaging: advanced/pricing-messaging.md
+```
+
+**Example: Our Current Messaging Skill**
+```
+multi-audience-product-messaging/
+├── SKILL.md
+├── glossary/
+├── references/
+│   ├── core/        # 8 files (positioning → messaging → rollout → testing)
+│   └── advanced/    # 3 files (storytelling, pricing, decay analysis)
+└── assets/
+
+Total: 12 files
+Works well - clear main path, optional extras
+```
+
+---
+
+### Pattern 2: By Phase/Stage
+
+**Structure:**
+```
+skill-name/
+├── SKILL.md
+├── references/
+│   ├── phase-1-discovery/
+│   │   ├── research.md
+│   │   ├── analysis.md
+│   │   └── synthesis.md
+│   ├── phase-2-strategy/
+│   │   ├── planning.md
+│   │   └── prioritization.md
+│   ├── phase-3-execution/
+│   │   ├── implementation.md
+│   │   └── validation.md
+│   └── advanced/
+│       └── optimization.md
+└── assets/
+```
+
+**Best for:**
+- ✅ Clear phase boundaries (discovery → strategy → execution)
+- ✅ Moderate to complex (12-25 files)
+- ✅ Each phase has multiple steps
+- ✅ Users might start at different phases
+
+**Characteristics:**
+- **Phases**: Organized by timeline or project stage
+- **Multiple files per phase**: Each phase is its own mini-workflow
+- Users can jump to their current phase
+- Natural grouping of related content
+
+**SKILL.md decision trees:**
+```markdown
+**Full process (start to finish):**
+→ Phase 1: phase-1-discovery/ (all files)
+→ Phase 2: phase-2-strategy/ (all files)
+→ Phase 3: phase-3-execution/ (all files)
+
+**Jump to specific phase:**
+→ Already did discovery: phase-2-strategy/planning.md
+→ Need execution only: phase-3-execution/implementation.md
+```
+
+**Example: Messaging Skill Reorganized for Phases**
+```
+multi-audience-product-messaging/
+├── SKILL.md
+├── glossary/
+├── references/
+│   ├── phase-1-positioning/      # Week 1
+│   │   ├── 01-dunford-framework.md
+│   │   └── 02-positioning-workshop.md
+│   ├── phase-2-messaging/        # Week 2-3
+│   │   ├── 03-pain-claim-gain.md
+│   │   ├── 04-multi-audience.md
+│   │   └── 05-message-architecture.md
+│   ├── phase-3-rollout/          # Week 4-7
+│   │   ├── 06-internal-rollout.md
+│   │   ├── 07-buy-in.md
+│   │   ├── 08-testing.md
+│   │   └── 09-launch.md
+│   └── advanced/
+│       ├── competitive/
+│       └── specialized/
+└── assets/
+
+Total: Same 12 files, organized differently
+Better for: Skills growing to 16-20+ files
+```
+
+---
+
+### When to Use Core/Advanced
+
+**Choose Core/Advanced when:**
+
+1. **Linear workflow** - There's a clear A → B → C path
+   - Example: "First positioning, then messaging, then rollout"
+
+2. **Simple to moderate** - 3-15 files total
+   - Core/advanced is simpler to navigate at this size
+
+3. **Most users follow same path** - 80%+ go through core in order
+   - Advanced features are situational
+
+4. **Natural core vs optional split** - Clear what's "main" vs "extra"
+   - Example: Crisis messaging is clearly optional/advanced
+
+5. **Quick to understand** - Users can scan and know where to go
+   - "Core = main workflow, advanced = extras"
+
+**Real examples:**
+- Document processing (core: read, write, format; advanced: OCR, batch)
+- Code review (core: review process; advanced: security audits, performance)
+- Commit messages (core: conventional commits; advanced: monorepo, squashing)
+
+**Signs you're outgrowing core/advanced:**
+- core/ folder has 10+ files and feels crowded
+- Files in core/ cluster into natural groups
+- Users commonly only need "part" of core/
+
+**When to switch:** If you hit 15-18 files, consider reorganizing by phase
+
+---
+
+### When to Use Phase-Based
+
+**Choose Phase-Based when:**
+
+1. **Clear phase boundaries** - Natural stages in the process
+   - Example: "Discovery → Strategy → Execution → Measurement"
+
+2. **Moderate to complex** - 12-25 files total
+   - Phases help organize larger skills
+
+3. **Multiple steps per phase** - Each phase has 3-5+ files
+   - Phases group related content
+
+4. **Users might skip phases** - Some start mid-process
+   - Example: "I already have positioning, just need rollout strategy"
+
+5. **Timeline-based** - Skill follows a time sequence
+   - Example: "Week 1: positioning, Week 2-3: messaging"
+
+**Real examples:**
+- Product launch (plan → build → test → launch → measure)
+- GTM strategy (research → positioning → launch → scale)
+- Customer research (plan → recruit → conduct → analyze → report)
+
+**Signs you need phase-based:**
+- You find yourself saying "Phase 1" and "Phase 2"
+- Files naturally cluster by project stage
+- Each cluster has 3-5+ related files
+- Users ask "Which phase should I start at?"
+
+**When to use:** If skill has 12+ files and clear stages
+
+---
+
+### Decision Matrix
+
+| Factor | Core/Advanced | Phase-Based |
+|--------|---------------|-------------|
+| **Total files** | 3-15 | 12-25 |
+| **Workflow** | Linear (A→B→C) | Staged (Phase 1→2→3) |
+| **File distribution** | Most in core/ | Balanced across phases |
+| **User entry point** | 80% start at beginning | Users might skip phases |
+| **Clustering** | Core vs optional | By project stage |
+| **Timeline** | One continuous flow | Distinct time periods |
+| **Flexibility** | Follow sequence | Jump to relevant phase |
+
+---
+
+### Migrating from Core/Advanced to Phase-Based
+
+**When to reorganize:**
+- Skill grows from 12 to 18+ files
+- You're adding another "section" to core/
+- Files naturally cluster by stage
+- Users are confused about where to start
+
+**How to migrate:**
+
+**Step 1: Identify phases**
+- Look at your numbered files (01, 02, 03...)
+- Find natural breaks/clusters
+- Name the phases based on project stage
+
+**Example:**
+```
+Before:
+core/01-positioning.md
+core/02-positioning-workshop.md
+core/03-messaging.md
+core/04-multi-audience.md
+core/05-message-arch.md
+core/06-rollout.md
+core/07-buy-in.md
+core/08-testing.md
+core/09-launch.md
+
+After:
+phase-1-positioning/01-framework.md
+phase-1-positioning/02-workshop.md
+phase-2-messaging/03-messaging.md
+phase-2-messaging/04-multi-audience.md
+phase-2-messaging/05-architecture.md
+phase-3-rollout/06-internal.md
+phase-3-rollout/07-buy-in.md
+phase-3-rollout/08-testing.md
+phase-3-rollout/09-launch.md
+```
+
+**Step 2: Update SKILL.md**
+- Change decision trees from "core files" to "phases"
+- Add phase-based navigation
+
+**Step 3: Test navigation**
+- Can users find what they need?
+- Are phases clear and logical?
+- Do decision trees still work?
+
+---
+
+### Case Study: Our Messaging Skill
+
+**Current state (Core/Advanced):**
+```
+references/
+├── core/              # 8 files
+│   ├── 01-positioning-foundation.md
+│   ├── 02-pain-claim-gain-messaging.md
+│   ├── 03-multi-audience-messaging.md
+│   ├── 04-message-architecture.md
+│   ├── 05-internal-rollout-guide.md
+│   ├── 07-testing-iteration-EXPANDED.md
+│   ├── 10-workshop-facilitation-master-guide.md
+│   └── 11-sales-stage-competitive-strategy.md
+└── advanced/          # 3 files
+    ├── storytelling-frameworks.md
+    ├── pricing-messaging.md
+    └── message-decay-analysis.md
+
+Total: 12 files
+Status: ✅ Works well with current structure
+```
+
+**Assessment:**
+- ✅ Linear flow exists (positioning → messaging → rollout)
+- ✅ Only 12 files (not crowded yet)
+- ✅ Clear core vs advanced distinction
+- ✅ Most users follow sequence
+
+**Decision: Keep Core/Advanced for now**
+
+**When to reconsider:**
+- If we add 6+ more files (reaching 18+)
+- If we add another "section" (e.g., measurement/analytics with 5 files)
+- If users start asking "Where do I start if I already have messaging?"
+
+**Potential future reorganization (if we expand):**
+```
+references/
+├── phase-1-positioning/
+│   ├── 01-dunford-framework.md
+│   └── 02-positioning-workshop.md
+├── phase-2-messaging/
+│   ├── 03-pain-claim-gain.md
+│   ├── 04-multi-audience.md
+│   ├── 05-message-architecture.md
+│   ├── 10-workshop-facilitation.md      # Move here (it's about messaging workshop)
+│   └── 11-sales-stage-messaging.md
+├── phase-3-rollout-and-launch/
+│   ├── 06-internal-rollout.md
+│   ├── 07-testing-iteration.md
+│   └── 08-launch-strategy.md             # Would add
+└── advanced/
+    ├── competitive/
+    │   └── positioning-trap-setting.md    # Would add
+    ├── specialized/
+    │   ├── storytelling-frameworks.md
+    │   ├── pricing-messaging.md
+    │   └── crisis-messaging.md            # Would add
+    └── optimization/
+        └── message-decay-analysis.md
+
+Total: 15+ files
+Would reorganize at this point
+```
+
+---
+
+### Summary: How to Choose
+
+**Decision flowchart:**
+
+```
+START: How many total files in references/?
+
+├─ 3-11 files
+│  └─ Use CORE + ADVANCED (Pattern 1)
+│     Simple, clear, easy to navigate
+│
+├─ 12-15 files
+│  └─ Does workflow have clear phases?
+│      ├─ Yes → Consider PHASE-BASED (Pattern 2)
+│      └─ No → Use CORE + ADVANCED (Pattern 1)
+│
+└─ 16-25 files
+   └─ Use PHASE-BASED (Pattern 2)
+      Helps manage complexity
+
+26+ files → Consider splitting into multiple skills
+```
+
+**Quick checklist:**
+
+- [ ] **3-11 files?** → Core/Advanced
+- [ ] **12-15 files + no clear phases?** → Core/Advanced
+- [ ] **12-15 files + clear phases?** → Consider Phase-Based
+- [ ] **16+ files?** → Phase-Based
+- [ ] **Files cluster naturally by stage?** → Phase-Based
+- [ ] **Users skip sections?** → Phase-Based
+- [ ] **Linear workflow?** → Core/Advanced
+- [ ] **Most users follow same path?** → Core/Advanced
+
+---
+
+### Both Approaches Use Same Principles
+
+**Regardless of structure:**
+
+1. **Progressive disclosure** - Claude loads files as needed via bash
+2. **Decision trees in SKILL.md** - Guide Claude to right files
+3. **Numbered for sequence** - Use numbers when order matters
+4. **Named when situational** - Descriptive names for optional content
+5. **Group related content** - Keep similar files together
+6. **Limit folder depth** - Max 3 levels deep
+7. **Limit files per folder** - 5-15 files max per folder
+
+The structure is about **organization for humans** - Claude navigates via SKILL.md decision trees either way.
+
+---
+
 
 ## Decision Framework
 
