@@ -1,5 +1,5 @@
 ---
-name: personas-user-research
+name: personas
 description: Create, validate, and activate buyer and user personas for product marketing. Covers customer interview techniques (Adele Revella's 5 Rings method), step-by-step persona creation, B2B 3-persona model, validation methods, campaign activation, and organization rollout. Includes tools (HubSpot, Xtensio, AI-powered), workshop facilitation, buying committee mapping, and common mistakes to avoid. Use when creating personas from scratch, validating existing personas, activating personas in campaigns, or measuring persona ROI.
 ---
 
