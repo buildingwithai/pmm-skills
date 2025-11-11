@@ -21,8 +21,12 @@ Use this skill when you need to:
 
 **NOT for:**
 - Positioning (use `positioning` skill first)
-- Testing, workshops, internal rollout, or launch (use `rollout-and-launch` skill)
+- Testing, workshops, internal rollout (use `rollout-and-launch` skill)
+- Full product launches (use `product-launch` skill after completing messaging)
 - Competitive analysis (use `competitive-intelligence` skill)
+
+**Next steps after messaging:**
+→ Once messaging is complete, use `product-launch` skill for executing product launches
 
 ## Prerequisites
 
