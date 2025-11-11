@@ -9,6 +9,27 @@ Create positioning and messaging that resonates with both technical and non-tech
 
 **✨ NEWLY EXPANDED**: This skill now includes deeply researched guides on message testing platforms, advanced workshop facilitation techniques, sales stage-specific messaging, and competitive trap-setting tactics.
 
+---
+
+## 🔗 Skill Integration
+
+**This skill integrates with:**
+
+### **product-launch** (NEXT STEP AFTER MESSAGING)
+Once you have positioning and messaging complete, use the **product-launch** skill for full launch execution:
+- **Launch Planning** → 90-day roadmaps, launch tier frameworks, GTM strategy
+- **Launch Coordination** → Cross-functional RACI, stakeholder coordination, war rooms
+- **Multi-Channel Execution** → Product Hunt, LinkedIn, Reddit, community tactics
+- **Post-Launch Growth** → Product-led growth, AARRR metrics, iteration frameworks
+- **Crisis Management** → Launch day playbooks, rapid response
+
+**When to use which skill:**
+- **Creating positioning/messaging?** → Use THIS skill
+- **Ready to execute a product launch?** → Use the `product-launch` skill
+- **Need both?** → Start HERE for positioning/messaging, THEN move to `product-launch` for execution
+
+**Note:** This skill's `08-launch-strategy.md` covers launching *messaging/repositioning* initiatives. For full *product launch* execution (new products, major features, market entry), use the dedicated `product-launch` skill.
+
 ## When to Use This Skill
 
 Use this skill when you need to:
