@@ -37,6 +37,68 @@ Use this skill when you need to:
 - **Build sustainable prioritization habits** that compound over time
 - **Prevent burnout** by focusing on the vital few, not the trivial many
 
+## 🚀 Quick Start Paths
+
+**Choose your focus area - you don't need to use everything:**
+
+### Path 1: Professional Prioritization Only
+
+**For PMs, managers, executives who need to prioritize work:**
+
+**Start here:**
+1. `04-product-feature-prioritization.md` - 8 frameworks (RICE, ICE, MoSCoW, WSJF, etc.)
+2. `05-stakeholder-management-prioritization.md` - Handle conflicting demands
+3. `06-delegation-mastery.md` - Delegate effectively
+4. `07-saying-no-professionally.md` - Protect focus
+
+**Optional foundation:** Files 01-03 (values, goals, decisions) if you need deeper clarity
+
+**Timeline:** 2-4 weeks to implement professional frameworks
+
+---
+
+### Path 2: Personal Productivity Only
+
+**For individuals who want to manage time, energy, and personal goals:**
+
+**Start here:**
+1. `08-time-blocking-deep-work.md` - Cal Newport's method, protect focus time
+2. `09-energy-management-chronotypes.md` - Optimize when you work
+3. `10-eisenhower-matrix-daily-planning.md` - Urgent vs Important
+4. `11-gtd-getting-things-done.md` - Complete capture/organization system
+5. `13-weekly-review-process.md` - Stay on track weekly
+
+**Optional foundation:** Files 01-03 (values, goals, decisions) for deeper alignment
+
+**Timeline:** 4-6 weeks to build productivity habits
+
+---
+
+### Path 3: Holistic Integration (Recommended)
+
+**For anyone who wants to prioritize across professional AND personal life:**
+
+**This is the full system - start with foundation, then load what you need:**
+
+**Phase 1 - Foundation (Week 1):**
+1. `01-values-clarification-foundation.md` - What matters most
+2. `02-goal-setting-frameworks.md` - Set aligned goals
+3. `03-decision-making-frameworks.md` - Make better decisions
+
+**Phase 2 - Application (Weeks 2-6):**
+- Load professional files (04-07) for work prioritization
+- Load personal files (08-12) for productivity and energy
+
+**Phase 3 - Review Systems (Weeks 7-8):**
+- `13-weekly-review-process.md` - Weekly reset
+- `14-quarterly-annual-planning.md` - Long-term planning
+
+**Timeline:** 8-12 weeks for complete mastery
+
+---
+
+**Can't decide?** Start with files 01-03 (foundation). They apply to both domains and give you clarity for everything else.
+
 ## The Complete Framework
 
 This skill integrates multiple proven prioritization approaches into a comprehensive system:
