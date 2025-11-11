@@ -233,39 +233,80 @@ Create positioning and messaging that resonates with both technical and non-tech
 
 ---
 
+### 2. Personas & User Research
+**Status**: ✅ Complete
+
+Create, validate, and activate buyer and user personas that drive marketing effectiveness and deliver measurable results.
+
+**Use this skill when you need to:**
+- Create personas from scratch using customer interviews
+- Validate existing personas with data
+- Interview customers to uncover buying insights (5 Rings method)
+- Activate personas in marketing campaigns and sales enablement
+- Run persona workshops with stakeholders
+- Map B2B buying committees (6-20 people per deal)
+- Choose persona tools (HubSpot, Xtensio, AI-powered)
+- Avoid common persona mistakes
+
+**Location**: `/skills/product-marketing/personas/`
+
+**Download**: Download the folder and zip it for upload to Claude
+
+**Key Components**:
+- Adele Revella's 5 Rings interview framework
+- B2B 3-persona model (P1/P2/P3)
+- Step-by-step persona creation process
+- Validation and testing methodologies
+- Campaign activation strategies
+- Workshop facilitation techniques
+- 7 production-ready templates
+- 10 comprehensive guides (5 core + 5 advanced)
+
+**Timeline**: 6-10 weeks for comprehensive process, 2-4 hours for fast-track proto-personas
+
+**Architecture**:
+- **Core references (5)**: Research/Interviews → Creation → Validation → Activation → Common Mistakes
+- **Advanced references (5)**: Workshop facilitation, buying committees, tools, AI-powered, negative personas
+- **Assets**: 7 templates including interview scripts, workshop canvas, validation board
+- **Version**: 1.0 (Last updated: 2024-11)
+
+[See the skill's README →](./skills/product-marketing/personas/SKILL.md)
+
+---
+
 ### Future Skills (Planned)
 
-**2. Competitive Intelligence & Market Analysis**
+**3. Competitive Intelligence & Market Analysis**
 - Competitive research frameworks
 - Win/loss analysis
 - Market sizing and segmentation
 - Battle card creation
 
-**3. Go-to-Market Strategy**
+**4. Go-to-Market Strategy**
 - GTM planning and execution
 - Launch orchestration
 - Channel strategy
 - Sales and CS enablement
 
-**4. Pricing & Packaging**
+**5. Pricing & Packaging**
 - Pricing strategy frameworks
 - Value-based pricing
 - Packaging optimization
 - Pricing research and testing
 
-**5. Product Launch & Adoption**
+**6. Product Launch & Adoption**
 - Launch planning and checklists
 - Beta programs
 - Customer adoption strategies
 - Launch analytics
 
-**6. Customer Research & Insights**
+**7. Customer Research & Insights**
 - User interview frameworks
 - Jobs-to-be-done research
 - Win/loss interviews
 - Voice of customer programs
 
-**7. Content Strategy for PMM**
+**8. Content Strategy for PMM**
 - Case study development
 - White papers and reports
 - Demo scripts and narratives
